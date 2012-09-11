@@ -1,0 +1,9 @@
+name = Humanitarianresponse Links Sectors
+description = Rename clusters to Sectors in Links
+core = 7.x
+package = HR Sectors
+dependencies[] = hr_sectors
+dependencies[] = humanitarianresponse_links
+features[features_api][] = api:1
+features[features_override_items][] = field.node-link-field_clusters
+features[features_overrides][] = field.node-link-field_clusters.field_instance|label
